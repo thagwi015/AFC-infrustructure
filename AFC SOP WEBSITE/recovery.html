@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+        content="Proposed disaster recovery plans for African Foods Company.">
+  <title>Disaster Recovery | AFC</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-content">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">AFC</span>
+        <span>
+          <strong>African Foods Company</strong>
+          <small>Staff SOP Portal</small>
+        </span>
+      </a>
+
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="staff.html">Our team</a>
+        <a href="index.html#procedures">Policies &amp; procedures</a>
+        <a href="helpdesk.html">Help desk</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-banner" aria-labelledby="page-title">
+      <div class="container">
+        <p class="eyebrow">PREPARING FOR DISRUPTION</p>
+        <h1 id="page-title">Disaster recovery</h1>
+        <p>
+          Proposed arrangements for restoring essential IT services
+          and business data after a serious incident.
+        </p>
+      </div>
+    </section>
+
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span aria-hidden="true"> / </span>
+        <span aria-current="page">Disaster recovery</span>
+      </nav>
+
+      <aside class="notice" aria-label="Plan status">
+        <strong>Proposed recovery plan:</strong>
+        Subject to management approval. Recovery targets,
+        backup facilities and alternative equipment must be
+        confirmed and tested before operational use.
+      </aside>
+
+      <section class="content-panel" aria-labelledby="overview-title">
+        <p class="eyebrow">PLAN INFORMATION</p>
+        <h2 id="overview-title">Purpose and responsibilities</h2>
+
+        <p>
+          This proposed plan covers Cape Town, Durban, Gqeberha
+          and Polokwane. Because Cape Town hosts central business
+          systems, a disruption there could affect all four offices.
+        </p>
+
+        <dl class="policy-details">
+          <div>
+            <dt>Plan owner</dt>
+            <dd>IT Manager</dd>
+          </div>
+          <div>
+            <dt>Network recovery</dt>
+            <dd>Network Administrator</dd>
+          </div>
+          <div>
+            <dt>Systems and data</dt>
+            <dd>Systems Administrator</dd>
+          </div>
+          <div>
+            <dt>Business decisions</dt>
+            <dd>Chief Operations Officer</dd>
+          </div>
+          <div>
+            <dt>Status</dt>
+            <dd>Proposed—subject to management approval.</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="content-panel" aria-labelledby="priorities-title">
+        <p class="eyebrow">RESTORING ESSENTIAL SERVICES</p>
+        <h2 id="priorities-title">Recovery priorities</h2>
+
+        <ol class="process-list">
+          <li>
+            <strong>Protect people.</strong>
+            Confirm site safety before handling equipment.
+          </li>
+          <li>
+            <strong>Contain the incident.</strong>
+            Assess the damage and prevent further disruption.
+          </li>
+          <li>
+            <strong>Restore supporting infrastructure.</strong>
+            Recover power, secure connectivity and essential
+            server services.
+          </li>
+          <li>
+            <strong>Restore business applications and data.</strong>
+            Recover Sage ERP and other essential services
+            according to technical dependencies and business impact.
+          </li>
+          <li>
+            <strong>Verify and resume operations.</strong>
+            Test restored services with the responsible departments
+            before returning to normal use.
+          </li>
+        </ol>
+      </section>
+
+      <section class="content-panel" aria-labelledby="scenarios-title">
+        <p class="eyebrow">SCENARIOS &amp; RESPONSES</p>
+        <h2 id="scenarios-title">Disaster scenarios</h2>
+
+        <div class="table-scroll"
+             role="region"
+             aria-label="Disaster scenarios and recommended actions"
+             tabindex="0">
+          <table class="staff-table">
+            <caption>Proposed recovery actions relevant to AFC</caption>
+            <thead>
+              <tr>
+                <th scope="col">Scenario</th>
+                <th scope="col">Possible impact</th>
+                <th scope="col">Recommended actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Power failure</th>
+                <td>
+                  Servers and network equipment stop working.
+                  Branches lose access to central services.
+                </td>
+                <td>
+                  Use UPS protection for a controlled shutdown.
+                  Use approved backup power where available.
+                  Check equipment and restore services safely
+                  after power stabilises.
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">Server or storage failure</th>
+                <td>
+                  Sage ERP and central business data
+                  become unavailable.
+                </td>
+                <td>
+                  Assess the failure, repair or replace equipment,
+                  and restore systems from verified backups.
+                  Test data integrity and user access.
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">Ransomware or malware</th>
+                <td>
+                  Systems may be encrypted or company
+                  information compromised.
+                </td>
+                <td>
+                  Isolate affected devices, notify the IT Manager
+                  and investigate the scope. Rebuild affected
+                  systems and restore verified clean backups
+                  before reconnecting.
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">Internet or VPN failure</th>
+                <td>
+                  Branches cannot access Cape Town systems.
+                </td>
+                <td>
+                  Check local equipment and contact the provider.
+                  Use an approved backup connection if available.
+                  Test VPN connectivity and application access.
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">Fire, flooding or theft</th>
+                <td>
+                  Equipment and locally stored backups
+                  may be damaged or lost.
+                </td>
+                <td>
+                  Prioritise evacuation and site safety.
+                  Arrange replacement equipment or an approved
+                  recovery location. Restore services using
+                  protected off-site backups.
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">Accidental data deletion</th>
+                <td>
+                  Important business records are lost or altered.
+                </td>
+                <td>
+                  Identify affected data and restore an appropriate
+                  backup version. Check restored records with the
+                  responsible department before normal use resumes.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="content-panel" aria-labelledby="backups-title">
+        <p class="eyebrow">PROTECTING BUSINESS DATA</p>
+        <h2 id="backups-title">Backup arrangements</h2>
+
+        <ul class="policy-list">
+          <li>
+            Back up critical business data daily, with the exact
+            schedule agreed according to business needs.
+          </li>
+          <li>
+            Include Sage ERP data, required server configurations
+            and network device configurations.
+          </li>
+          <li>
+            Use application-consistent database backups so that
+            restored data remains usable.
+          </li>
+          <li>
+            Maintain three copies of important data across two
+            storage types, with one copy off-site. Keep at least
+            one backup offline or protected against alteration.
+          </li>
+          <li>
+            Encrypt backup copies and restrict access
+            to authorised IT staff.
+          </li>
+          <li>
+            Check backup results daily and investigate failures promptly.
+          </li>
+          <li>
+            Agree retention periods with management and the
+            departments responsible for the data.
+          </li>
+          <li>
+            Keep recovery instructions and essential contact
+            details accessible during an outage.
+          </li>
+        </ul>
+      </section>
+
+      <section class="content-panel" aria-labelledby="steps-title">
+        <p class="eyebrow">COORDINATED RESTORATION</p>
+        <h2 id="steps-title">Recovery procedure</h2>
+
+        <ol class="process-list">
+          <li>Protect people and confirm that the location is safe.</li>
+          <li>
+            Report the incident to the IT Manager and record
+            affected systems and business activities.
+          </li>
+          <li>
+            Contain the problem and assess its extent
+            before starting restoration.
+          </li>
+          <li>
+            The IT Manager activates the appropriate recovery
+            plan and obtains required approvals.
+          </li>
+          <li>
+            Restore essential power, equipment, secure
+            connectivity and supporting server services.
+          </li>
+          <li>
+            Restore affected applications and data from verified
+            backups, following technical dependencies.
+          </li>
+          <li>
+            Test security, data integrity and application operation
+            with the relevant department.
+          </li>
+          <li>
+            Obtain approval to resume operations and inform
+            affected employees.
+          </li>
+          <li>
+            Monitor restored services and document outstanding problems.
+          </li>
+          <li>
+            Review the incident and update the recovery plan.
+          </li>
+        </ol>
+      </section>
+
+      <section class="content-panel" aria-labelledby="targets-title">
+        <p class="eyebrow">AGREED &amp; TESTED TARGETS</p>
+        <h2 id="targets-title">Recovery targets and testing</h2>
+
+        <dl class="policy-details">
+          <div>
+            <dt>RTO</dt>
+            <dd>
+              Recovery Time Objective: the target time for
+              restoring a service after disruption.
+            </dd>
+          </div>
+          <div>
+            <dt>RPO</dt>
+            <dd>
+              Recovery Point Objective: how far back data recovery
+              may go, indicating acceptable data loss measured in time.
+            </dd>
+          </div>
+        </dl>
+
+        <p>
+          Management must approve targets for each critical service
+          based on business impact, available resources and cost.
+        </p>
+
+        <div class="liaison-note">
+          <strong>Backup frequency must support the recovery target.</strong>
+          <p>
+            Daily backups alone may allow nearly 24 hours of data loss.
+            A shorter RPO for Sage ERP requires more frequent
+            application-consistent backups or another suitable
+            protection method.
+          </p>
+        </div>
+
+        <ul class="policy-list">
+          <li>
+            Conduct quarterly sample restoration tests,
+            subject to management approval.
+          </li>
+          <li>
+            Conduct an annual coordinated recovery exercise,
+            subject to management approval.
+          </li>
+          <li>
+            Verify that backups can be restored and staff
+            understand their responsibilities.
+          </li>
+          <li>
+            Measure whether agreed recovery targets can be met.
+          </li>
+          <li>
+            Record results, failures and corrective actions.
+          </li>
+          <li>
+            Review the plan after major system changes
+            and actual disasters.
+          </li>
+        </ul>
+      </section>
+
+      <section class="support-panel" aria-labelledby="support-title">
+        <div>
+          <p class="eyebrow">REPORT DISRUPTIONS PROMPTLY</p>
+          <h2>Start with the help desk.</h2>
+          <p>
+            Report affected services and business impact.
+            Major incidents are escalated to the IT Manager.
+          </p>
+        </div>
+        <a class="button button-dark" href="helpdesk.html">
+          View reporting procedure
+        </a>
+      </section>
+
+      <nav class="page-links" aria-label="Related pages">
+        <a href="helpdesk.html">&larr; Help desk</a>
+        <a href="index.html">Return to home &rarr;</a>
+      </nav>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>
+        <strong>African Foods Company</strong><br>
+        Cape Town · Durban · Gqeberha · Polokwane
+      </p>
+      <p>
+        Prepared by Group C<br>
+        WIL academic prototype · 2026
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
